@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: HitByCar
+  m_EditorClassIdentifier: 
+  title: Friend Hit By A Car
+  effect: -1 Best Friend
+  flavor: Your friend was run over by a car and killed. You look at things so differently
+    now. What is right, what is wrong? What matters and what doesn't? Nothing will
+    ever be the same.
+  probability: 0.1
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 53a3f0acd0a134565970b0e3d01b8bec, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 370de48b5466c43198350f3bdf349fd4, type: 2}

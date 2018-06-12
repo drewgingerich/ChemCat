@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: MakingWaves
+  m_EditorClassIdentifier: 
+  title: You're Making Waves
+  effect: +50 Renown
+  flavor: People are talking about you, the young upstart with a lot fo promise. Keep
+    it up!
+  probability: 1
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 7881d8eb73249488d812f7bf42402087, type: 2}
+  - {fileID: 11400000, guid: f10d0631682e14a6f9dd9d058505053b, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 2e3e5370441c6479ea336b9712c4fe2c, type: 2}

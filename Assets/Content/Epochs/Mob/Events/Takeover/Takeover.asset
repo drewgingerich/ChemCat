@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: Takeover
+  m_EditorClassIdentifier: 
+  title: You've Been Usurped
+  effect: Welcome the sweet hereafter.
+  flavor: You're time is up. Your successor has chosen themselves... and your death.
+    RIP
+  probability: 0.2
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 3073237c4824b490682e93838acaea0b, type: 2}
+  - {fileID: 11400000, guid: e0a346f4e5e2047a4b9ee7bcfd9c45a8, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 3bfea0a2632ec4d48ba0b11815f0d424, type: 2}

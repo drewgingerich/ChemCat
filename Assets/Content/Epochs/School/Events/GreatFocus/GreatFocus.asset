@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: GreatFocus
+  m_EditorClassIdentifier: 
+  title: Great Focus!
+  effect: +10 smarts +10 sleep
+  flavor: With the help of some Aderall, you were in the zone today. You got twice
+    as much done as you usually do!
+  probability: 0.3
+  triggerOnExpire: 1
+  reoccuring: 1
+  appreanceReqs:
+  - {fileID: 11400000, guid: 7bcf374aaccc745f5aeea2517f9d22f5, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 4da8aec6f8d4f412f810a6747f6a74de, type: 2}
+  - {fileID: 11400000, guid: 164b7a24f6eed48e493f533410d968d6, type: 2}

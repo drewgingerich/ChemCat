@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c2486310e5f4cef8d76377b919ff90, type: 3}
+  m_Name: Aderall
+  m_EditorClassIdentifier: 
+  name: Aderall
+  effect: +1 Sleep / Sec
+  description: Tutor this guy in exchange for aderall. Aderall helps you focus, so
+    you can finish studying with plenty of time to spare for sleep and fun.
+  income: 1
+  buyCurrency: {fileID: 11400000, guid: 1e2ffc02fb082493694896813524dab2, type: 2}
+  baseCost: 10

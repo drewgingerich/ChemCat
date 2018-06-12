@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: AssassinationAttempt
+  m_EditorClassIdentifier: 
+  title: Someone Tries To Assassinate You
+  effect: -3 Goons +100 Respect
+  flavor: The good old assassination attempt. Nothing better validates that you're
+    doing a great job.
+  probability: 1
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: fcaeeddb210d14a499e6c3449ebd96ac, type: 2}
+  - {fileID: 11400000, guid: 784091f03216848c9ba68088c60d7fdf, type: 2}
+  - {fileID: 11400000, guid: 8442e8b3a4e454050b7435d49e790c37, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 8b420707a0c8744048e9683253587653, type: 2}
+  - {fileID: 11400000, guid: b2a36c60bc95c4866b8a4409c577be0c, type: 2}

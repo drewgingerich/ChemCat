@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c2486310e5f4cef8d76377b919ff90, type: 3}
+  m_Name: HeroinDrone
+  m_EditorClassIdentifier: 
+  name: Heroin Drone
+  effect: +2000 Cash / Sec
+  description: Have the city beg at your feet when they all become addicted to heroin
+    because of this little guy.
+  income: 2000
+  buyCurrency: {fileID: 11400000, guid: ca6a6df229c4740b591cd02f1daf9ea9, type: 2}
+  baseCost: 100000

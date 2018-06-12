@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: OneWhoKnocks
+  m_EditorClassIdentifier: 
+  title: Knock On Someone's Door
+  effect: +10 Respect
+  flavor: People respect a cat who can knock on a door themselves. Honestly it's impressive
+    with those fuzzy little paws.
+  probability: 0.5
+  triggerOnExpire: 0
+  reoccuring: 1
+  appreanceReqs: []
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 4442db9819cdb4173a69b22bed75d1ab, type: 2}

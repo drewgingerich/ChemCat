@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: Midterm
+  m_EditorClassIdentifier: 
+  title: Pop Midterm
+  effect: A medium step on a long road
+  flavor: It's a pop Midterm! Pretty rude, honestly. What about those poor premed
+    students?
+  probability: 1
+  triggerOnExpire: 0
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 2ec256f46f08846a1832afce94afe3ce, type: 2}
+  - {fileID: 11400000, guid: 498575641c0874da8a14b26f78477553, type: 2}
+  triggerReqs:
+  - {fileID: 11400000, guid: 62c8d88ed3c5d430bb4043cf1ecca78f, type: 2}
+  - {fileID: 11400000, guid: 16f3e80ec833448c6b58d45fd7dae44e, type: 2}
+  effects: []

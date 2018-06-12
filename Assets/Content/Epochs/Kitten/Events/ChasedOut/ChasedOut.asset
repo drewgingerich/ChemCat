@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: ChasedOut
+  m_EditorClassIdentifier: 
+  title: Humans Chase Out A Friend
+  effect: -1 Friend
+  flavor: Your humans notice the influx of stray cats in their house, along with lots
+    of missing cash. They try to chase your friends out. Most evade them, but one
+    gets caught and sent to the pound T.T
+  probability: 0.2
+  triggerOnExpire: 1
+  reoccuring: 1
+  appreanceReqs:
+  - {fileID: 11400000, guid: ad7db3eb4bfe24375b0d4dd08f42497d, type: 2}
+  - {fileID: 11400000, guid: 4714fe357a1124fd0968be7dda92f812, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 6f4f57be8885b431b87674fcb211fe39, type: 2}

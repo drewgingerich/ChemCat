@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: AttendSchool
+  m_EditorClassIdentifier: 
+  title: Attend School
+  effect: '-250000 Cash
+
+    +1 Bright future'
+  flavor: You were accepted! Now there nothing between you and higher education you
+    crave.
+  probability: 1
+  triggerOnExpire: 0
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 2afae3bc36bd343ad8325026a7e309c9, type: 2}
+  triggerReqs:
+  - {fileID: 11400000, guid: 546a6391c8be340f7859e2fb58e949e0, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 719fe9fa5c2a24b97a6e02b5fe048203, type: 2}

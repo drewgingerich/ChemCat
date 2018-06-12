@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c2486310e5f4cef8d76377b919ff90, type: 3}
+  m_Name: CrystalGarden
+  m_EditorClassIdentifier: 
+  name: Home Crystal Garden
+  effect: +1 Cash / Click
+  description: Grow some cool crystals. Sell them to your friends. Embrace capitalism.
+    Don't mix up the rock candy with other crystals.
+  income: 1
+  buyCurrency: {fileID: 11400000, guid: 146cd6c580fa64258baeb706a71b8318, type: 2}
+  baseCost: 30

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: SendAMessage
+  m_EditorClassIdentifier: 
+  title: Send A Message
+  effect: -3000 Cash +10 Respect
+  flavor: Kill several members of a rival organization using a money gun. Let them
+    keep the blood money.
+  probability: 0.5
+  triggerOnExpire: 0
+  reoccuring: 1
+  appreanceReqs: []
+  triggerReqs:
+  - {fileID: 11400000, guid: fa2c96cffc7c34964902956b6d1a875f, type: 2}
+  effects:
+  - {fileID: 11400000, guid: bdca03c5e1205440c92141d3c9644955, type: 2}
+  - {fileID: 11400000, guid: 554796afa34b24c9d97ba17ccf03b20a, type: 2}

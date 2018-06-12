@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: PayOffTheLaw
+  m_EditorClassIdentifier: 
+  title: Pay Off The Law
+  effect: -5000 Cash
+  flavor: Some nosy officers got a bit too close. They backed off when you slipped
+    some money into their hands, though.
+  probability: 1
+  triggerOnExpire: 1
+  reoccuring: 1
+  appreanceReqs:
+  - {fileID: 11400000, guid: ccd75729ccbff4899b4087ac6dee2f93, type: 2}
+  triggerReqs: []
+  effects: []

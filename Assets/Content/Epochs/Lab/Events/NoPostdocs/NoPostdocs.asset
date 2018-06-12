@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: NoPostdocs
+  m_EditorClassIdentifier: 
+  title: No Postdocs
+  effect: -10 Renown
+  flavor: You're looked down upon for having no postdocs in your lab. Are you even
+    running a real lab? Are you even trying?
+  probability: 0.5
+  triggerOnExpire: 1
+  reoccuring: 1
+  appreanceReqs:
+  - {fileID: 11400000, guid: 208ba6d04651a40e381fe5f07868a622, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 5e121bd030c55456694db345651b92cf, type: 2}

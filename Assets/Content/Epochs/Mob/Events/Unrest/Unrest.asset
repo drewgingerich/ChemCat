@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: Unrest
+  m_EditorClassIdentifier: 
+  title: Unrest Among The Members
+  effect: -20 Respect
+  flavor: Money is power, and don't seem to have much of either.
+  probability: 0.3
+  triggerOnExpire: 1
+  reoccuring: 1
+  appreanceReqs:
+  - {fileID: 11400000, guid: 64a2b358a456f4e89b438579ec3789cd, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 8e3b74bb797ce4173acd8a72bd1cea5e, type: 2}

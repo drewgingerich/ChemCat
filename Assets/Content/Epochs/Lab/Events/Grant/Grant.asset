@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: Grant
+  m_EditorClassIdentifier: 
+  title: You Got A Grant!
+  effect: +10000 Cash +1 Fancy Instrument
+  flavor: You did it, you got a grant!
+  probability: 1
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 8a76d395ff1ca4cb7bcc6afb10355dd6, type: 2}
+  - {fileID: 11400000, guid: 49dc86e7acd10411085b5aa67bf83438, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 76bc2eb4d72824ffdab03c7e72a588b8, type: 2}
+  - {fileID: 11400000, guid: 3f7b19ed4749f4d08af3605416963b5e, type: 2}

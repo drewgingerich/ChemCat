@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df627870b0264df98a0763a9b69a99a, type: 3}
+  m_Name: Renown
+  m_EditorClassIdentifier: 
+  name: Renown
+  startingAmount: 0
+  enforceMaximum: 0
+  max: 0
+  startClickIncome: 1
+  startPassiveIncome: 0
+  clickAmenities:
+  - {fileID: 11400000, guid: 3b793912c7b0141539750fbfb776783d, type: 2}
+  passiveAmenities: []

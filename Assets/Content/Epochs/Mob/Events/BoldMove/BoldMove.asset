@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: BoldMove
+  m_EditorClassIdentifier: 
+  title: Make A Bold Move
+  effect: +20 Respect +5000 Cash
+  flavor: Flashily force the market in your favor.  You'll need a number of goons
+    to make this work.
+  probability: 0.3
+  triggerOnExpire: 0
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: a8382c754ea0446bd91ebd795b365c68, type: 2}
+  triggerReqs:
+  - {fileID: 11400000, guid: 4bbaf0b23f1604fcf9a46df124dc9868, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 0e2be67f09ef84766a80a8869d5446eb, type: 2}
+  - {fileID: 11400000, guid: a1505f63b98e84ea5beb43481a98cadc, type: 2}

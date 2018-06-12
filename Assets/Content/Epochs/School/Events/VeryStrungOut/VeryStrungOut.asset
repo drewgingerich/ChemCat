@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: VeryStrungOut
+  m_EditorClassIdentifier: 
+  title: Very Strung Out
+  effect: -15 Smarts - 30 Sleep
+  flavor: 
+  probability: 0.3
+  triggerOnExpire: 0
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 59359dc33545c49ad9aa5595a76cf22e, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 5aa999726bc554fef9a496ceeff3250f, type: 2}
+  - {fileID: 11400000, guid: 0a496635a1af9479280dad694422946d, type: 2}

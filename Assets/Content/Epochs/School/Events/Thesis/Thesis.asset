@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: Thesis
+  m_EditorClassIdentifier: 
+  title: Pop Thesis
+  effect: '...'
+  flavor: '... suuuure'
+  probability: 1
+  triggerOnExpire: 0
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: e03573529baf74a5eaab3b44d455dd38, type: 2}
+  - {fileID: 11400000, guid: cd1ca30514cc74080a760f9bd8e6c1f7, type: 2}
+  triggerReqs:
+  - {fileID: 11400000, guid: e9827bcb4624e4118a07dec23743324a, type: 2}
+  - {fileID: 11400000, guid: 524ace4408b5e420f97e7a4c520cf60e, type: 2}
+  effects: []

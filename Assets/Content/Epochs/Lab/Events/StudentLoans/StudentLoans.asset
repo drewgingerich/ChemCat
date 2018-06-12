@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: StudentLoans
+  m_EditorClassIdentifier: 
+  title: Your Student Loans Are Due
+  effect: -250000
+  flavor: Oh ya, you're old you now. That happened fast.
+  probability: 1
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs: []
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: fc318c291567a438884c0f18be63c72f, type: 2}

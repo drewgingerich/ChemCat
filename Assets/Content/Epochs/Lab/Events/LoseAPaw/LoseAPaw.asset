@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: LoseAPaw
+  m_EditorClassIdentifier: 
+  title: You Lose A Paw In A Science Accident
+  effect: -1 Paw -50 Renown
+  flavor: You lost a paw. That sucks. Even worse, people are talking about your lab
+    is unsafe and poorly run.
+  probability: 1
+  triggerOnExpire: 1
+  reoccuring: 0
+  appreanceReqs: []
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: d240f7b4209fa4590b6f8363d770b898, type: 2}

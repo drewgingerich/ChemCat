@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8973c0de3e3e4437b8398ba61fd09990, type: 3}
+  m_Name: GetStudentLoan
+  m_EditorClassIdentifier: 
+  title: Student Loan Offer
+  effect: +250000 Cash
+  flavor: Wow, people will just give you money to go to school! There really is nothing
+    between you and tasty knowledge. I mean you'll owe them or whatever, but that's
+    for OLD you.
+  probability: 1
+  triggerOnExpire: 0
+  reoccuring: 0
+  appreanceReqs:
+  - {fileID: 11400000, guid: 4a6e47fb3bc334b22b30806f6f51b154, type: 2}
+  - {fileID: 11400000, guid: c06cf916219f74072b3d1273c0528c6e, type: 2}
+  triggerReqs: []
+  effects:
+  - {fileID: 11400000, guid: 028c0d87e130f437f9c85106f4f66f33, type: 2}
