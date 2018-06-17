@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c2486310e5f4cef8d76377b919ff90, type: 3}
   m_Name: PopSci
   m_EditorClassIdentifier: 
-  name: PopSci Magazine Subscription
+  name: PopSci Subscription
   effect: +1 Curiosity / 2 Sec
   description: The tech of science fiction is just around the corner, we swear! Order
     now and get a free sample of nanocloth.
