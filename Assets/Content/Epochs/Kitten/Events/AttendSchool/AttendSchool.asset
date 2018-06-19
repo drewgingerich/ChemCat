@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Name: AttendSchool
   m_EditorClassIdentifier: 
   title: Attend School
-  effect: '-250000 Cash
-
-    +1 Bright future'
+  effect: -250000 Cash, +1 Bright Future
   flavor: You were accepted! Now there nothing between you and higher education you
     crave.
   probability: 1
