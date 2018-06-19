@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114819856715923328}
   - component: {fileID: 114013957878919362}
   m_Layer: 5
-  m_Name: AmenityDisplayList
+  m_Name: AmenityUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
