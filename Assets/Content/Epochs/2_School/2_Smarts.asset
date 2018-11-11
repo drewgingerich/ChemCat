@@ -9,14 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0df627870b0264df98a0763a9b69a99a, type: 3}
-  m_Name: Curiosity
+  m_Name: 2_Smarts
   m_EditorClassIdentifier: 
-  name: Curiosity
+  name: Smarts
   startingAmount: 0
+  enforceMaximum: 0
+  max: 0
   startClickIncome: 1
   startPassiveIncome: 0
-  clickAmenities:
-  - {fileID: 11400000, guid: f7550ef99b9f648cca244aa17aa50886, type: 2}
-  passiveAmenities:
-  - {fileID: 11400000, guid: 2d5b84304e7eb414d966e0c3b392ddf3, type: 2}
-  - {fileID: 11400000, guid: a901175912026459c91f418767d876e6, type: 2}
+  clickAmenities: []
+  passiveAmenities: []

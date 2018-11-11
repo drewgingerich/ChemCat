@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/YoungCat.unity
+    path: Assets/Content/Epochs/1_Kitten/YoungCat.unity
     guid: f68017f863b7a4866a599a251577fe91
   - enabled: 1
-    path: Assets/School.unity
+    path: Assets/Content/Epochs/2_School/School.unity
     guid: fda9f75c860fa47d4a15dc3dfab3a31d
   - enabled: 1
-    path: Assets/Lab.unity
+    path: Assets/Content/Epochs/3_Lab/Lab.unity
     guid: 7d6cd53196b9c4cf9b07899437cf0a81
   - enabled: 1
-    path: Assets/Mob.unity
+    path: Assets/Content/Epochs/4_Mob/Mob.unity
     guid: 557d86e78962b43e5962137c57c742ce
   - enabled: 1
-    path: Assets/RIP.unity
+    path: Assets/Content/Epochs/5_RIP/RIP.unity
     guid: 9160786a7503a471c96f1095ef16d10d

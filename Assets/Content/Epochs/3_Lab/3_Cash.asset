@@ -9,17 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0df627870b0264df98a0763a9b69a99a, type: 3}
-  m_Name: Cash
+  m_Name: 3_Cash
   m_EditorClassIdentifier: 
   name: Cash
   startingAmount: 0
   enforceMaximum: 0
   max: 0
-  startClickIncome: 1000
+  startClickIncome: -100
   startPassiveIncome: 0
-  clickAmenities:
-  - {fileID: 11400000, guid: f7f50d21a35b94972b825298a1438555, type: 2}
+  clickAmenities: []
   passiveAmenities:
-  - {fileID: 11400000, guid: a0b5e08e0ddaa421081c67d9d8c18f4e, type: 2}
-  - {fileID: 11400000, guid: 3d9921d190984411ca1310e03c2fe631, type: 2}
-  - {fileID: 11400000, guid: 86677c40ea15a4983842c9618a4d2734, type: 2}
+  - {fileID: 11400000, guid: 7b3f25611a5a94ccaaef7afe2da58ac8, type: 2}
+  - {fileID: 11400000, guid: 07d68244f2af7453eaf09071eaa0d8ea, type: 2}
+  - {fileID: 11400000, guid: 27f4d55d4b32743ef8ca9e7078c5bd71, type: 2}

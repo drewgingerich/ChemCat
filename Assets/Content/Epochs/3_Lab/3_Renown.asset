@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0df627870b0264df98a0763a9b69a99a, type: 3}
-  m_Name: Sleep
+  m_Name: 3_Renown
   m_EditorClassIdentifier: 
-  name: Sleep
-  startingAmount: 100
-  enforceMaximum: 1
-  max: 100
-  startClickIncome: -3
-  startPassiveIncome: 1
-  clickAmenities: []
-  passiveAmenities:
-  - {fileID: 11400000, guid: 9d71de17f80c94aae9845402df9b600f, type: 2}
+  name: Renown
+  startingAmount: 0
+  enforceMaximum: 0
+  max: 0
+  startClickIncome: 1
+  startPassiveIncome: 0
+  clickAmenities:
+  - {fileID: 11400000, guid: 3b793912c7b0141539750fbfb776783d, type: 2}
+  passiveAmenities: []

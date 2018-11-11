@@ -9,8 +9,8 @@ public class AmenityListDisplay : MonoBehaviour {
 
 	void Awake() {
 		foreach(Amenity amenity in availableAmenities) {
-			var newAmenityDisplayObj = Instantiate(amenityDisplayPrefab);
-			newAmenityDisplayObj.transform.SetParent(transform);
+			var newAmenityDisplayObj = Instantiate(amenityDisplayPrefab, transform);
+			// newAmenityDisplayObj.transform.SetParent(transform);
 			var newAmenityDisplay = newAmenityDisplayObj.GetComponent<AmenityDisplay>();
 			newAmenityDisplay.SetAmenity(amenity);
 		}

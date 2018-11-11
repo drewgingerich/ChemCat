@@ -14,8 +14,7 @@ MonoBehaviour:
   title: You've Been Usurped
   effect: Welcome the sweet hereafter.
   flavor: You're time is up. Your successor has chosen themselves... and your death.
-    RIP
-  probability: 0.2
+  probability: 0.4
   triggerOnExpire: 1
   reoccuring: 0
   appreanceReqs:

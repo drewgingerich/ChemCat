@@ -13,8 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Heroin Drone
   effect: +2000 Cash / Sec
-  description: Have the city beg at your feet when they all become addicted to heroin
-    because of this little guy.
+  description: New model has two more syringes and holds 20% more heroin!
   income: 2000
   buyCurrency: {fileID: 11400000, guid: ca6a6df229c4740b591cd02f1daf9ea9, type: 2}
   baseCost: 100000

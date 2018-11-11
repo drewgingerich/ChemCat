@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Name: ApplyToSchool
   m_EditorClassIdentifier: 
   title: Apply for School
-  effect: '-100 Cash
-
-    +1 Chance for a bright future'
+  effect: -100 Cash, +1 Chance for a bright future
   flavor: Send out an application for school. School is a magical place where the
     dreams of young science cats come true!
   probability: 1

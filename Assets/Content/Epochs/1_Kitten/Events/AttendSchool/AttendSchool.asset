@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Attend School
   effect: -250000 Cash, +1 Bright Future
-  flavor: You were accepted! Now there nothing between you and higher education you
-    crave.
+  flavor: You were accepted! Now there nothing between you and the higher education
+    you crave.
   probability: 1
   triggerOnExpire: 0
   reoccuring: 0

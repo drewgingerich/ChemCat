@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class EventDriver : MonoBehaviour {
 
 	public Event activeEvent;
-	public float presentationTime = 10;
-	public float searchDelay = 5;
-	[HideInInspector] public float timer;
+	[System.NonSerialized] public float presentationTime = 15;
+	[System.NonSerialized] public float searchDelay = 7;
+	[System.NonSerialized] public float timer;
 
 	[SerializeField] Button button;
 	[SerializeField] List<Event> possibleEvents;
@@ -51,6 +51,7 @@ public class EventDriver : MonoBehaviour {
 	}
 
 	void PassEvent() {
+		activeEvent.timesPassed += 1;
 		activeEvent = null;
 		timer = 0;
 	}
