@@ -15,6 +15,8 @@ public class EventGraph : EditorWindow {
 	private ConnectionPoint selectedInPoint;
 	private ConnectionPoint selectedOutPoint;
 
+	private Vector2 drag;
+
 	[MenuItem("Window/Event Graph")]
 	public static void ShowWindow() {
 		EditorWindow.GetWindow(typeof(EventGraph));
@@ -67,13 +69,34 @@ public class EventGraph : EditorWindow {
 	}
 
 	private void ProcessEvents(Event e) {
+		drag = Vector2.zero;
+
 		switch(e.type) {
 			case EventType.MouseDown:
+				if (e.button == 0) {
+					ClearConnectionSelection();
+				}
+
 				if (e.button == 1) {
 					ProcessContextMenu(e.mousePosition);
 				}
 				break;
+			case EventType.MouseDrag:
+				if (e.button == 0) {
+					OnDrag(e.delta);
+				}
+				break;
 		}
+	}
+
+	private void OnDrag(Vector2 delta) {
+		drag = delta;
+		if (nodes != null) {
+			for (int i = 0; i < nodes.Count; i++) {
+				nodes[i].Drag(delta);
+			}
+		}
+		GUI.changed = true;
 	}
 
 	private void ProcessNodeEvents(Event e) {
