@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class EventNode {
 
@@ -17,8 +18,10 @@ public class EventNode {
 	public GUIStyle defaultNodeStyle;
 	public GUIStyle selectedNodeStyle;
 
+	public Action<EventNode> OnRemoveNode;
+
 	public EventNode (Vector2 position, float width, float height, GUIStyle nodeStyle, GUIStyle selectedStyle, GUIStyle inPointStyle,
-		GUIStyle outPointStyle, Action<ConnectionPoint> OnClickInPoint, Action<ConnectionPoint> OnClickOutPoint)
+		GUIStyle outPointStyle, Action<ConnectionPoint> OnClickInPoint, Action<ConnectionPoint> OnClickOutPoint, Action<EventNode> OnClickRemoveNode)
 	{
 		rect = new Rect(position.x, position.y, width, height);
 		style = nodeStyle;
@@ -26,6 +29,7 @@ public class EventNode {
 		outPoint = new ConnectionPoint(this, ConnectionPointType.Out, outPointStyle, OnClickOutPoint);
 		defaultNodeStyle = nodeStyle;
 		selectedNodeStyle = selectedStyle;
+		OnRemoveNode = OnClickRemoveNode;
 	}
 
 	public void Drag(Vector2 delta) {
@@ -53,6 +57,11 @@ public class EventNode {
 						style = defaultNodeStyle;
 					}
 				}
+
+				if (e.button == 1 && isSelected && rect.Contains(e.mousePosition)) {
+					ProcessContextMenu();
+					e.Use();
+				}
 				break;
 
 			case EventType.MouseUp:
@@ -68,5 +77,17 @@ public class EventNode {
 				break;
 		}
 		return false;
+	}
+
+	private void ProcessContextMenu() {
+		GenericMenu genericMenu = new GenericMenu();
+		genericMenu.AddItem(new GUIContent("Remove node"), false, OnClickRemoveNode);
+		genericMenu.ShowAsContext();
+	}
+
+	private void OnClickRemoveNode() {
+		if (OnRemoveNode != null) {
+			OnRemoveNode(this);
+		}
 	}
 }

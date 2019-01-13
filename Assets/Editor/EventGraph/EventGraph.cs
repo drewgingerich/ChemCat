@@ -96,7 +96,7 @@ public class EventGraph : EditorWindow {
 	private void OnClickAddNode(Vector2 mousePosition) {
 		if (nodes == null)
 			nodes = new List<EventNode>();
-		nodes.Add(new EventNode(mousePosition, 200, 50, nodeStyle, selectedNodeStyle, inPointStyle, outPointStyle, OnClickInPoint, OnClickOutPoint));
+		nodes.Add(new EventNode(mousePosition, 200, 50, nodeStyle, selectedNodeStyle, inPointStyle, outPointStyle, OnClickInPoint, OnClickOutPoint, OnClickRemoveNode));
 	}
 
 	private void OnClickInPoint(ConnectionPoint inPoint) {
@@ -137,5 +137,23 @@ public class EventGraph : EditorWindow {
 	private void ClearConnectionSelection() {
 		selectedInPoint = null;
 		selectedOutPoint = null;
+	}
+	private void OnClickRemoveNode(EventNode node) {
+		if (connections != null) {
+			List<Connection> connectionsToRemove = new List<Connection>();
+
+			for (int i = 0; i < connections.Count; i++) {
+				if (connections[i].inPoint == node.inPoint || connections[i].outPoint == node.outPoint) {
+					connectionsToRemove.Add(connections[i]);
+				}
+			}
+
+			for (int i = 0; i < connectionsToRemove.Count; i++) {
+				connections.Remove(connectionsToRemove[i]);
+			}
+			connectionsToRemove = null;
+		}
+
+		nodes.Remove(node);
 	}
 }
