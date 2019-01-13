@@ -46,10 +46,14 @@ public class EventGraph : EditorWindow {
 		DrawNodes();
 		DrawConnections();
 
+		DrawConnectionLine(Event.current);
+
 		ProcessNodeEvents(Event.current);
 		ProcessEvents(Event.current);
-		if (GUI.changed)
+
+		if (GUI.changed) {
 			Repaint();
+		}
 	}
 
 	private void DrawNodes() {
@@ -66,6 +70,36 @@ public class EventGraph : EditorWindow {
 				connections[i].Draw();
 			}
 		}
+	}
+
+	private void DrawConnectionLine(Event e) {
+		if (selectedInPoint != null && selectedOutPoint == null) {
+			Handles.DrawBezier(
+				selectedInPoint.rect.center,
+				e.mousePosition,
+				selectedInPoint.rect.center + Vector2.left * 50f,
+				e.mousePosition - Vector2.left * 50f,
+				Color.white,
+				null,
+				2f
+			);
+
+			GUI.changed = true;
+		}
+
+		if (selectedOutPoint != null && selectedInPoint == null) {
+			Handles.DrawBezier(
+				selectedOutPoint.rect.center,
+				e.mousePosition,
+				selectedOutPoint.rect.center - Vector2.left * 50f,
+				e.mousePosition + Vector2.left * 50f,
+				Color.white,
+				null,
+				2f
+			);
+
+			GUI.changed = true;
+		}	
 	}
 
 	private void ProcessEvents(Event e) {
