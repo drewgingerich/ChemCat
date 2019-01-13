@@ -34,8 +34,7 @@ public class EventDisplay : MonoBehaviour {
 	void UpdateDisplay() {
 		placeholderText.gameObject.SetActive(false);
 		titleText.text = driver.activeEvent.title;
-		effectText.text = driver.activeEvent.effect;
-		flavorText.text = driver.activeEvent.flavor;
+		flavorText.text = driver.activeEvent.description;
 		countdownDivider.SetActive(true);
 		countdownLabelText.SetActive(true);
 		countdownText.text = Mathf.FloorToInt(driver.presentationTime - driver.timer).ToString();

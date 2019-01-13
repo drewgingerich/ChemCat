@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class EventDriver : MonoBehaviour {
 
-	public Event activeEvent;
+	public NarrativeEvent activeEvent;
 	[System.NonSerialized] public float presentationTime = 15;
 	[System.NonSerialized] public float searchDelay = 7;
 	[System.NonSerialized] public float timer;
 
 	[SerializeField] Button button;
-	[SerializeField] List<Event> possibleEvents;
+	[SerializeField] List<NarrativeEvent> possibleEvents;
 
 	void Awake() {
 		button.onClick.AddListener(TiggerEvent);
@@ -27,33 +27,19 @@ public class EventDriver : MonoBehaviour {
 	}
 
 	void UpdateEventActivity() {
-		if (activeEvent.CheckIfCanTrigger())
+		if (activeEvent.CanTrigger)
 			button.interactable = true;
 		else
 			button.interactable = false;
 
 		timer += Time.deltaTime;
 		if (timer >= presentationTime) {
-			if (activeEvent.triggerOnExpire) {
-				TiggerEvent();
-			} else {
-				PassEvent();
-			}
+			activeEvent.Pass();
 		}
 	}
 
 	void TiggerEvent() {
-		activeEvent.TriggerOutcome();
-		activeEvent.timesSucceeded += 1;
-		if (!activeEvent.reoccuring)
-			possibleEvents.Remove(activeEvent);
-		PassEvent();
-	}
-
-	void PassEvent() {
-		activeEvent.timesPassed += 1;
-		activeEvent = null;
-		timer = 0;
+		activeEvent.Trigger();
 	}
 
 	void FindNextEvent() {
@@ -64,11 +50,11 @@ public class EventDriver : MonoBehaviour {
 		while (activeEvent == null) {
 			float rand = Random.Range(0, 1f);
 			int randIndex = Random.Range(0, possibleEvents.Count);
-			Event e = possibleEvents[randIndex];
-			if (!e.CheckIfCanAppear())
+			NarrativeEvent selectedEvent= possibleEvents[randIndex];
+			if (!selectedEvent.CanAppear)
 				continue;
-			if (rand < e.probability) {
-				activeEvent = e;
+			if (rand < selectedEvent.appearanceWeight) {
+				activeEvent = selectedEvent;
 				timer = 0;
 				return;
 			}	
