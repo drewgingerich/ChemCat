@@ -2,9 +2,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class EventGraph : EditorWindow {
+namespace NodeGraphEditor {
+public class NodeGraph : EditorWindow {
 
-	private List<EventNode> nodes;
+	private List<Node> nodes;
 	private List<Connection> connections;
 
 	private GUIStyle nodeStyle;
@@ -20,7 +21,7 @@ public class EventGraph : EditorWindow {
 
 	[MenuItem("Window/Event Graph")]
 	public static void ShowWindow() {
-		EditorWindow.GetWindow(typeof(EventGraph));
+		EditorWindow.GetWindow(typeof(NodeGraph));
 	}
 
 	private void OnEnable() {
@@ -84,7 +85,7 @@ public class EventGraph : EditorWindow {
 
 	private void DrawNodes() {
 		if (nodes != null) {
-			foreach (EventNode node in nodes) {
+			foreach (Node node in nodes) {
 				node.Draw();
 			}
 		}
@@ -162,7 +163,7 @@ public class EventGraph : EditorWindow {
 	private void ProcessNodeEvents(Event e) {
 		if (nodes == null)
 			return;
-		foreach (EventNode node in nodes) {
+		foreach (Node node in nodes) {
 			bool guiChanged = node.ProcessEvents(e);
 			if (guiChanged) {
 				GUI.changed = true;
@@ -178,8 +179,8 @@ public class EventGraph : EditorWindow {
 
 	private void OnClickAddNode(Vector2 mousePosition) {
 		if (nodes == null)
-			nodes = new List<EventNode>();
-		nodes.Add(new EventNode(mousePosition, 200, 50, nodeStyle, selectedNodeStyle, inPointStyle, outPointStyle, OnClickInPoint, OnClickOutPoint, OnClickRemoveNode));
+			nodes = new List<Node>();
+		nodes.Add(new Node(mousePosition, 200, 50, nodeStyle, selectedNodeStyle, inPointStyle, outPointStyle, OnClickInPoint, OnClickOutPoint, OnClickRemoveNode));
 	}
 
 	private void OnClickInPoint(ConnectionPoint inPoint) {
@@ -221,7 +222,7 @@ public class EventGraph : EditorWindow {
 		selectedInPoint = null;
 		selectedOutPoint = null;
 	}
-	private void OnClickRemoveNode(EventNode node) {
+	private void OnClickRemoveNode(Node node) {
 		if (connections != null) {
 			List<Connection> connectionsToRemove = new List<Connection>();
 
@@ -239,4 +240,5 @@ public class EventGraph : EditorWindow {
 
 		nodes.Remove(node);
 	}
+}
 }

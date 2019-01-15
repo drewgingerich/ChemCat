@@ -3,17 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace NodeGraphEditor {
 public enum ConnectionPointType { In, Out }
 
 public class ConnectionPoint {
 
 	public Rect rect;
 	public ConnectionPointType type;
-	public EventNode node;
+	public Node node;
 	public GUIStyle style;
 	public Action<ConnectionPoint> OnClickConnectionPoint;
 
-	public ConnectionPoint (EventNode node, ConnectionPointType type, GUIStyle style, Action<ConnectionPoint> OnClickConnectionPoint) {
+	public ConnectionPoint (Node node, ConnectionPointType type, GUIStyle style, Action<ConnectionPoint> OnClickConnectionPoint) {
 		this.node = node;
 		this.type = type;
 		this.style = style;
@@ -40,4 +41,5 @@ public class ConnectionPoint {
 			}
 		}
 	}
+}
 }

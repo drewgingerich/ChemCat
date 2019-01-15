@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class EventNode {
+namespace NodeGraphEditor {
+public class Node {
 
 	public Rect rect;
 	public string title;
@@ -18,10 +19,10 @@ public class EventNode {
 	public GUIStyle defaultNodeStyle;
 	public GUIStyle selectedNodeStyle;
 
-	public Action<EventNode> OnRemoveNode;
+	public Action<Node> OnRemoveNode;
 
-	public EventNode (Vector2 position, float width, float height, GUIStyle nodeStyle, GUIStyle selectedStyle, GUIStyle inPointStyle,
-		GUIStyle outPointStyle, Action<ConnectionPoint> OnClickInPoint, Action<ConnectionPoint> OnClickOutPoint, Action<EventNode> OnClickRemoveNode)
+	public Node (Vector2 position, float width, float height, GUIStyle nodeStyle, GUIStyle selectedStyle, GUIStyle inPointStyle,
+		GUIStyle outPointStyle, Action<ConnectionPoint> OnClickInPoint, Action<ConnectionPoint> OnClickOutPoint, Action<Node> OnClickRemoveNode)
 	{
 		rect = new Rect(position.x, position.y, width, height);
 		style = nodeStyle;
@@ -90,4 +91,5 @@ public class EventNode {
 			OnRemoveNode(this);
 		}
 	}
+}
 }

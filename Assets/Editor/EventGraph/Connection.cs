@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+namespace NodeGraphEditor {
 public class Connection {
 
 	public ConnectionPoint inPoint;
@@ -35,4 +36,5 @@ public class Connection {
 			}
 		}
 	}
+}
 }
